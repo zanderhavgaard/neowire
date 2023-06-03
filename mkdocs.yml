@@ -1,0 +1,6 @@
+site_name: NeoWire
+site_url: https://neowire.zanders.cloud/
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
