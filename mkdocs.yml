@@ -1,11 +1,10 @@
-site_name: neowire.ncwan.net
+site_name: wtp://neowire.ncwan.net
 site_url: https://neowire.ncwan.net
 nav:
   - "[neowire_index]": index.md
   - "[behind_the_code]": behind_the_code.md
   - "[datadumps]":
       - "[datadump_78]": datadumps/datadump_78.md
-      - "[datadump_84]": datadumps/datadump_84.md
   - "[wtf_is_this]": wtf_is_this.md
 theme:
   name: terminal

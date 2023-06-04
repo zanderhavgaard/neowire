@@ -1,41 +1,29 @@
-# NeoWire Blog
+```
+                             _                _           __
+   ____  ___  ____ _      __(_)_______       (_)___  ____/ /__  _  __
+  / __ \/ _ \/ __ \ | /| / / / ___/ _ \     / / __ \/ __  / _ \| |/_/
+ / / / /  __/ /_/ / |/ |/ / / /  /  __/    / / / / / /_/ /  __/>  <
+/_/ /_/\___/\____/|__/|__/_/_/   \___/____/_/_/ /_/\__,_/\___/_/|_|
+                                    /_____/
+```
 
-_Your Source for Unfiltered Night City Stories_
+# ~ Welcome to NeoWire ~
 
-Welcome to NeoWire, the premier blog on the Night City Wide-Area Network (NCWAN) that
-uncovers the untold stories and hidden truths of Night City. If you're seeking
-unfiltered news and gritty tales from the cybernetic underbelly, you've come to
-the right place.
+> _Your Source for Unfiltered Night City Stories_
 
-## About the Writer: Cipher
+Welcome to NeoWire, the premier news source on the Night City Wide-Area Network (NCWAN) that uncovers the untold stories and hidden truths of Night City.
+If you're seeking unfiltered news and gritty tales from the cybernetic underbelly, you've come to the right place!
 
-![Cipher](img/neowire.png)
+## Unleashing the Power of Data
 
-Meet Cipher, your guide through the neon-lit streets and dark alleyways of Night
-City. A shadowy figure with a knack for uncovering secrets, Cipher is a name
-whispered in the darkest corners of the net. Rumored to be an ex-corporate
-operative turned information broker, their true identity remains unknown.
-Cipher's insatiable curiosity and relentless pursuit of the truth have earned
-them a reputation as a skilled investigator, well-versed in the art of hacking,
-decryption, and evading the watchful eyes of the megacorporations. They navigate
-the treacherous world of Night City, unearthing stories that others dare not
-touch.
+NeoWire is a platform dedicated to delivering the truth about Night City.
+We operate on the Night City Wide-Area Network (NCWAN), and NeoWire serves as a hub for sharing data and archived news reports.
+We believe that knowledge is power, and it's time for the people of Night City to have access to the information they deserve.
 
-## Uncovering the Real Night City
+## Explore the Datadumps
 
-At NeoWire, we dig deeper, exposing the
-hidden layers of Night City's power struggles, cybernetic augmentations, and the
-clash between megacorporations and the resilient denizens of the CyberSlums.
-From high-tech heists to gritty tales of survival, Cipher brings you firsthand
-accounts and captivating narratives that redefine the perception of Night City.
-Join us on this thrilling journey as we peel back the digital facade and explore
-the stories that define the essence of Night City. Experience the neon-soaked
-streets, the pulsating energy, and the secrets that lie within. Stay tuned for
-the latest updates, as Cipher fearlessly navigates the labyrinthine world of
-Night City, delivering stories that the megacorporations want to keep hidden.
-Connect with us on the NCWAN, follow us on the feeds, and immerse yourself in
-the gritty tales of NeoWire.
+Our talented netrunner, `c1pher`, tirelessly compiles and curates datadumps, making them available for public consumption.
+These datadumps contain valuable insights, classified reports, and uncensored news articles that traditional media outlets dare not publish.
+Through NeoWire, we aim to bypass censorship and bring the truth directly to you.
 
----
-
-_Follow NeoWire on the Night City Wide-Area Network (NCWAN)_
+![NeoWire Logo](img/neowire.png)
