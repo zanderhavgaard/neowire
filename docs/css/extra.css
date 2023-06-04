@@ -1,25 +1,4 @@
 :root {
-  /* Base Colors */
-  --color-primary: #ff4282;
-  --color-secondary: #00c7ff;
-  --color-accent: #b800ff;
-
-  /* Shades */
-  --color-dark: #181818;
-  --color-light: #f6f6f6;
-
-  /* Gradients */
-  --color-gradient-primary: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-accent)
-  );
-  --color-gradient-secondary: linear-gradient(
-    135deg,
-    var(--color-secondary),
-    var(--color-accent)
-  );
-
   /* Background Colors */
   --color-bg0: #101014;
   --color-bg0-hard: #1d1d21;
@@ -57,38 +36,53 @@
   --color-light-gray: #b4b4b7;
 
   /* original */
-  --gb-dm-bg0: var(--color-bg0);
-  --gb-dm-bg0-hard: var(--color-bg0-hard);
-  --gb-dm-bg0-soft: var(--color-bg0-soft);
-  --gb-dm-bg1: var(--color-bg1);
-  --gb-dm-bg2: var(--color-bg2);
-  --gb-dm-bg3: var(--color-bg3);
-  --gb-dm-bg4: var(--color-bg4);
-  --gb-dm-fg0: var(--color-fg0);
-  --gb-dm-fg1: var(--color-fg1);
-  --gb-dm-fg2: var(--color-fg2);
-  --gb-dm-fg3: var(--color-fg3);
-  --gb-dm-fg4: var(--color-fg4);
-  --gb-dm-dark-red: var(--color-red);
-  --gb-dm-dark-green: var(--color-green);
-  --gb-dm-dark-yellow: var(--color-yellow);
-  --gb-dm-dark-blue: var(--color-blue);
-  --gb-dm-dark-purple: var(--color-purple);
-  --gb-dm-dark-aqua: var(--color-aqua);
-  --gb-dm-dark-orange: var(--color-orange);
-  --gb-dm-dark-gray: var(--color-gray);
-  --gb-dm-light-red: var(--color-light-red);
-  --gb-dm-light-green: var(--color-light-green);
-  --gb-dm-light-yellow: var(--color-light-yellow);
-  --gb-dm-light-blue: var(--color-light-blue);
-  --gb-dm-light-purple: var(--color-light-purple);
-  --gb-dm-light-aqua: var(--color-light-aqua);
-  --gb-dm-light-orange: var(--color-light-orange);
-  --gb-dm-light-gray: var(--color-light-gray);
+  /* --gb-dm-bg0: var(--color-bg0); */
+  /* --gb-dm-bg0-hard: var(--color-bg0-hard); */
+  /* --gb-dm-bg0-soft: var(--color-bg0-soft); */
+  /* --gb-dm-bg1: var(--color-bg1); */
+  /* --gb-dm-bg2: var(--color-bg2); */
+  /* --gb-dm-bg3: var(--color-bg3); */
+  /* --gb-dm-bg4: var(--color-bg4); */
+  /* --gb-dm-fg0: var(--color-fg0); */
+  /* --gb-dm-fg1: var(--color-fg1); */
+  /* --gb-dm-fg2: var(--color-fg2); */
+  /* --gb-dm-fg3: var(--color-fg3); */
+  /* --gb-dm-fg4: var(--color-fg4); */
+  /* --gb-dm-dark-red: var(--color-red); */
+  /* --gb-dm-dark-green: var(--color-green); */
+  /* --gb-dm-dark-yellow: var(--color-yellow); */
+  /* --gb-dm-dark-blue: var(--color-blue); */
+  /* --gb-dm-dark-purple: var(--color-purple); */
+  /* --gb-dm-dark-aqua: var(--color-aqua); */
+  /* --gb-dm-dark-orange: var(--color-orange); */
+  /* --gb-dm-dark-gray: var(--color-gray); */
+  /* --gb-dm-light-red: var(--color-light-red); */
+  /* --gb-dm-light-green: var(--color-light-green); */
+  /* --gb-dm-light-yellow: var(--color-light-yellow); */
+  /* --gb-dm-light-blue: var(--color-light-blue); */
+  /* --gb-dm-light-purple: var(--color-light-purple); */
+  /* --gb-dm-light-aqua: var(--color-light-aqua); */
+  /* --gb-dm-light-orange: var(--color-light-orange); */
+  /* --gb-dm-light-gray: var(--color-light-gray); */
+
+  /* actually using the colors in the css */
+  --background-color: var(--color-bg0);
+  --font-color: var(--color-fg1);
+  --invert-font-color: var(--color-bg0-hard);
+  --primary-color: var(--color-blue);
+  --secondary-color: var(--color-green);
+  --tertiary-color: var(--color-gray);
+  --error-color: var(--color-red);
+  --progress-bar-background: var(--color-bg2);
+  --progress-bar-fill: var(--color-fg2);
+  --code-bg-color: var(--color-bg0);
+
+  /* width of the page */
+  --page-width: 80em;
 
   /* fonts */
-  /* --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, */
-  /*   Bitstream Vera Sans Mono, Courier New, monospace, serif; */
-  /* --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, */
-  /*   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
+  --font-stack: Hack, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  --mono-font-stack: Hack, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
