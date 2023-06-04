@@ -1,0 +1,94 @@
+:root {
+  /* Base Colors */
+  --color-primary: #ff4282;
+  --color-secondary: #00c7ff;
+  --color-accent: #b800ff;
+
+  /* Shades */
+  --color-dark: #181818;
+  --color-light: #f6f6f6;
+
+  /* Gradients */
+  --color-gradient-primary: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  --color-gradient-secondary: linear-gradient(
+    135deg,
+    var(--color-secondary),
+    var(--color-accent)
+  );
+
+  /* Background Colors */
+  --color-bg0: #101014;
+  --color-bg0-hard: #1d1d21;
+  --color-bg0-soft: #25252b;
+  --color-bg1: #35353c;
+  --color-bg2: #4b4b54;
+  --color-bg3: #62626c;
+  --color-bg4: #787881;
+
+  /* Foreground Colors */
+  --color-fg0: #f8f8f8;
+  --color-fg1: #e3e3e3;
+  --color-fg2: #cfcfd0;
+  --color-fg3: #b9b9bb;
+  --color-fg4: #a4a4a6;
+
+  /* Accent Colors */
+  --color-red: #b72837;
+  --color-green: #7cc272;
+  --color-yellow: #f9c74f;
+  --color-blue: #7366bd;
+  --color-purple: #a868b9;
+  --color-aqua: #42c8c4;
+  --color-orange: #f1863c;
+  --color-gray: #8a8a8c;
+
+  /* Light Colors */
+  --color-light-red: #f0657d;
+  --color-light-green: #9ed275;
+  --color-light-yellow: #ffd166;
+  --color-light-blue: #a594d3;
+  --color-light-purple: #d398c7;
+  --color-light-aqua: #74e4e1;
+  --color-light-orange: #ffaa6b;
+  --color-light-gray: #b4b4b7;
+
+  /* original */
+  --gb-dm-bg0: var(--color-bg0);
+  --gb-dm-bg0-hard: var(--color-bg0-hard);
+  --gb-dm-bg0-soft: var(--color-bg0-soft);
+  --gb-dm-bg1: var(--color-bg1);
+  --gb-dm-bg2: var(--color-bg2);
+  --gb-dm-bg3: var(--color-bg3);
+  --gb-dm-bg4: var(--color-bg4);
+  --gb-dm-fg0: var(--color-fg0);
+  --gb-dm-fg1: var(--color-fg1);
+  --gb-dm-fg2: var(--color-fg2);
+  --gb-dm-fg3: var(--color-fg3);
+  --gb-dm-fg4: var(--color-fg4);
+  --gb-dm-dark-red: var(--color-red);
+  --gb-dm-dark-green: var(--color-green);
+  --gb-dm-dark-yellow: var(--color-yellow);
+  --gb-dm-dark-blue: var(--color-blue);
+  --gb-dm-dark-purple: var(--color-purple);
+  --gb-dm-dark-aqua: var(--color-aqua);
+  --gb-dm-dark-orange: var(--color-orange);
+  --gb-dm-dark-gray: var(--color-gray);
+  --gb-dm-light-red: var(--color-light-red);
+  --gb-dm-light-green: var(--color-light-green);
+  --gb-dm-light-yellow: var(--color-light-yellow);
+  --gb-dm-light-blue: var(--color-light-blue);
+  --gb-dm-light-purple: var(--color-light-purple);
+  --gb-dm-light-aqua: var(--color-light-aqua);
+  --gb-dm-light-orange: var(--color-light-orange);
+  --gb-dm-light-gray: var(--color-light-gray);
+
+  /* fonts */
+  /* --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, */
+  /*   Bitstream Vera Sans Mono, Courier New, monospace, serif; */
+  /* --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, */
+  /*   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
+}

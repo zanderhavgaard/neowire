@@ -1,6 +1,15 @@
-site_name: NeoWire
-site_url: https://neowire.zanders.cloud/
+site_name: neowire.ncwan.net
+site_url: https://neowire.ncwan.net
 nav:
-  - Home: index.md
-  - About: about.md
-theme: readthedocs
+  - "[neowire_index]": index.md
+  - "[behind_the_code]": behind_the_code.md
+  - "[datadumps]":
+      - "[datadump_78]": datadumps/datadump_78.md
+      - "[datadump_84]": datadumps/datadump_84.md
+  - "[wtf_is_this]": wtf_is_this.md
+theme:
+  name: terminal
+  palette: gruvbox_dark
+  custom_dir: overrides
+extra_css:
+  - css/extra.css
