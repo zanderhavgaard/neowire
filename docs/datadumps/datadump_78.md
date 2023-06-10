@@ -69,10 +69,10 @@ void handleRequest(int clientSocket) {
 
 char* processRequest(const char* request) {
     // Process the request and generate the appropriate response
-    // You can handle different HTTP methods, headers, and parameters here
+    // You can handle different WTP methods, headers, and parameters here
 
     // Return a sample response for now
-    return "HTTP/1.1 200 OK\nContent-Type: text/html\n\n<html><body><h1>Welcome to the Cybernetic Network!</h1></body></html>";
+    return "WTP/1.1 200 OK\nContent-Type: text/wml\n\n<wml><body><h1>Welcome to the Cybernetic Network!</h1></body></wml>";
 }
 ```
 
@@ -133,7 +133,7 @@ You should see the following output:
 ```sh
 $ meta run server.metabin
 
-[META Web Server v2.7.13]
+[META Web Server v18.7.13]
 
 Initializing WTP (WAN Transfer Protocol)...
 
@@ -154,7 +154,7 @@ Initializing WTP (WAN Transfer Protocol)...
 ***********************************************************
 
 [INFO] Server started successfully! Press Ctrl+C to stop the server.
-[INFO] Server running at: http://localhost:8080
+[INFO] Server running at: WTP://localhost:8080
 [INFO] Routing requests to /api to handle API endpoints
 [INFO] Serving static files from /public directory
 ```
