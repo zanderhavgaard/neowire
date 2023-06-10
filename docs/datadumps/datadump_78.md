@@ -84,13 +84,13 @@ Use the META compiler to compile the webserver program:
 
 ```
 $ meta compile server.meta
-META Compiler v2.0.3
+META Compiler v2.37.1
 
------------------------------
-|                           |
-|    META Compiler v2.0.3   |
-|                           |
------------------------------
+------------------------------
+|                            |
+|    META Compiler v2.37.1   |
+|                            |
+------------------------------
 
 Compiling server.meta...
 Parsing source file...
@@ -114,7 +114,7 @@ Compilation Summary:
 |                             |
 -------------------------------
 
-Thank you for using the FREE-META compiler v0.37.1
+Thank you for using the FREE-META compiler v2.37.1
 
 Stay connected. Stay secure. Keep hacking!
 

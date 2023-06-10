@@ -1,14 +1,15 @@
 site_name: wtp://neowire.ncwan.net
 site_url: https://neowire.ncwan.net
-nav:
-  - "[neowire_index]": index.md
-  - "[behind_the_code]": behind_the_code.md
-  - "[datadumps]":
-      - "[datadump_78]": datadumps/datadump_78.md
-  - "[wtf_is_this]": wtf_is_this.md
 theme:
   name: terminal
   palette: gruvbox_dark
   custom_dir: overrides
 extra_css:
   - css/extra.css
+nav:
+  - "[neowire_index]": index.md
+  - "[behind_the_code]": behind_the_code.md
+  - "[datadumps]":
+      - "[datadump_78]": datadumps/datadump_78.md
+      - "[datadump_1337]": datadumps/datadump_1337.md
+  - "[wtf_is_this]": wtf_is_this.md
