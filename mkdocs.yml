@@ -11,4 +11,5 @@ nav:
   - "[behind_the_code]": behind_the_code.md
   - "[datadumps]":
       - "[datadump_78]": datadumps/datadump_78.md
+      - "[datadump_82]": datadumps/datadump_82.md
   - "[wtf_is_this]": wtf_is_this.md
