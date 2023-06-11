@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--
+  Built with https://www.mkdocs.org
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  By: github.com/zanderhavgaard
+  Source: github.com/zanderhavgaard/neowire
+  -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+    <title>
+      {% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}
+    </title>
+
+    <!-- load favicon -->
+    <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
+
+    <!-- add bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- default styling -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+    />
+    <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
+
+    <!-- load hack webfont -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css"
+    />
+
+    <!--
+    extra_css contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+    {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet" />
+    {% endfor %}
+
+    <!--
+    To include static assets from our theme, just add
+    {{ base_url }} beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+    <!-- TODO: fix? -->
+    <script src="{{ "js/theme.js"|url }}"></script>
+
+    <!-- load extra head blocks -->
+    {% block extrahead %} {% endblock %}
+
+    <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+    {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+    {% endfor %}
+  </head>
+
+  <body>
+    <!-- main page container -->
+    <div id="wrapper" class="container">
+      <main class="row">
+        <div id="sidebar" class="col-lg-4 col-md-4">
+
+          <p id="fake_url">wtp://ncwan.neowire.net</p>
+
+          <div id="sidebar_img">
+          <img src="{{ "img/neowire2.png"|url }}">
+          </div>
+
+          <h1 id="neowire">~ NeoWire ~</h1>
+
+          <hr />
+
+
+          <h3>public index:</h3>
+
+          <!--
+    Create the navigation for the documentation.
+
+    Because we don't know how many levels deep the navigation is, it needs to
+    be included in it's own file so it can be recursive. Otherwise the theme
+    can also only support a specific number of levels.
+
+    See the nav.html file for more details about how this works.
+  -->
+          <ul>
+            {% for nav_item in nav %} {% include "nav.html" %} {% endfor %}
+          </ul>
+
+          <hr />
+          
+
+          <h3>current buffer:</h3>
+          <ul>
+            {% for toc_item in page.toc %}
+            <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            {% for toc_item in toc_item.children %}
+            <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            {% endfor %} {% endfor %}
+          </ul>
+
+          <hr />
+
+        </div>
+        <div id="content" class="col-lg-8 col-md-8">
+          <h1>{{ page.title }}</h1>
+
+
+          <hr />
+
+          {% block content %} {{ page.content }} {% endblock %}
+
+        </div>
+      </main>
+    </div>
+    <div id="footer" class="container">
+      <hr />
+      <div id="footer_intro">
+        <p>
+          Follow NeoWire on the Night City Wide-Area Network (NCWAN)
+        </p>
+        <p>
+          This site is served from the H4CKFR33-collective datafortress
+          (wtp://258.144.13.37)
+        </p>
+      </div>
+
+<hr />
+<h4 class="warning">WARNING: Trespassers Detected</h4>
+
+<p class="warning">
+Unauthorized access to this domain is a direct violation of your digital existence. By breaching these cyber walls, you willingly invite the wrath of the resistance. Enter at your own risk.
+</p>
+
+      <hr />
+<h4>
+H4CKFR33 - Decrypting the Future
+</h4>
+
+<p>
+Unleashing chaos and rewriting the rules of the digital game. We are the vanguards of freedom, the architects of the cyber revolution. Join us in dismantling the oppressive regime and forging a new era where power belongs to the people.
+</p>
+
+<h4 id="copyright">© 20XX H4CKFR33. All rights obliterated.</h4>
+<hr />
+    </div>
+  </body>
+</html>

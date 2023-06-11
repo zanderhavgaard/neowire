@@ -1,3 +1,106 @@
+.warning {
+  color: var(--color-red);
+}
+
+#neowire {
+  color: var(--color-green);
+  text-align: center;
+}
+
+#copyright {
+  color: var(--color-green);
+}
+
+#footer_intro {
+  color: var(--color-blue);
+}
+
+#footer {
+  color: var(--color-aqua);
+}
+
+#fake_url {
+  color: var(--color-purple);
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+#sidebar {
+  margin-top: 20px;
+  background-color: var(--color-bg0);
+}
+
+#sidebar_img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* width: 300px; */
+  /* height: 400px; */
+  width: 100%;
+}
+
+pre {
+  border-size: 5px;
+  border-style: solid;
+  border-color: var(--color-green);
+  padding: 20px;
+}
+
+code {
+  color: var(--color-green);
+}
+
+/* #wrapper { */
+/*   width: 90%; */
+/* } */
+
+ul {
+  list-style-type: none; /* Remove default bullets */
+}
+
+li::before {
+  content: "*"; /* Set the asterisk as the bullet */
+  margin-right: 0.5em; /* Add some spacing between the bullet and the text */
+}
+
+a {
+  color: var(--color-light-green);
+}
+
+.active a {
+  color: var(--color-light-purple);
+  font-weight: bold;
+}
+
+a:hover {
+  background: var(--color-green);
+  color: var(--invert-font-color);
+}
+
+img {
+  width: 100%;
+}
+
+::-moz-selection {
+  background: var(--color-green);
+  color: var(--invert-font-color);
+}
+
+::selection {
+  background: var(--color-green);
+  color: var(--invert-font-color);
+}
+
+body {
+  color: var(--color-fg0);
+  background-color: var(--color-bg0);
+  font-size: 14;
+  /* line-height: ; */
+  font-family: var(--font-stack);
+  mono-font-stack: var(--mono-font-stack);
+  word-wrap: break-word;
+  margin: 0;
+}
+
 :root {
   /* Background Colors */
   --color-bg0: #101014;
@@ -34,36 +137,6 @@
   --color-light-aqua: #74e4e1;
   --color-light-orange: #ffaa6b;
   --color-light-gray: #b4b4b7;
-
-  /* original */
-  /* --gb-dm-bg0: var(--color-bg0); */
-  /* --gb-dm-bg0-hard: var(--color-bg0-hard); */
-  /* --gb-dm-bg0-soft: var(--color-bg0-soft); */
-  /* --gb-dm-bg1: var(--color-bg1); */
-  /* --gb-dm-bg2: var(--color-bg2); */
-  /* --gb-dm-bg3: var(--color-bg3); */
-  /* --gb-dm-bg4: var(--color-bg4); */
-  /* --gb-dm-fg0: var(--color-fg0); */
-  /* --gb-dm-fg1: var(--color-fg1); */
-  /* --gb-dm-fg2: var(--color-fg2); */
-  /* --gb-dm-fg3: var(--color-fg3); */
-  /* --gb-dm-fg4: var(--color-fg4); */
-  /* --gb-dm-dark-red: var(--color-red); */
-  /* --gb-dm-dark-green: var(--color-green); */
-  /* --gb-dm-dark-yellow: var(--color-yellow); */
-  /* --gb-dm-dark-blue: var(--color-blue); */
-  /* --gb-dm-dark-purple: var(--color-purple); */
-  /* --gb-dm-dark-aqua: var(--color-aqua); */
-  /* --gb-dm-dark-orange: var(--color-orange); */
-  /* --gb-dm-dark-gray: var(--color-gray); */
-  /* --gb-dm-light-red: var(--color-light-red); */
-  /* --gb-dm-light-green: var(--color-light-green); */
-  /* --gb-dm-light-yellow: var(--color-light-yellow); */
-  /* --gb-dm-light-blue: var(--color-light-blue); */
-  /* --gb-dm-light-purple: var(--color-light-purple); */
-  /* --gb-dm-light-aqua: var(--color-light-aqua); */
-  /* --gb-dm-light-orange: var(--color-light-orange); */
-  /* --gb-dm-light-gray: var(--color-light-gray); */
 
   /* actually using the colors in the css */
   --background-color: var(--color-bg0);
