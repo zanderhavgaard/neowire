@@ -1,3 +1,11 @@
+/* TODO: figure how to style hr's */
+/* hr { */
+/*   color: var(--color-fg0); */
+/*   margin: 20px; */
+/*   border: 0; */
+/*   border-bottom: 1px dashed var(--color-green); */
+/* } */
+
 .warning {
   color: var(--color-red);
 }
