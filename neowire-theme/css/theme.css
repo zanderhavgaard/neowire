@@ -13,7 +13,7 @@
 #neowire {
   color: var(--color-green);
   text-align: center;
-}
+ }
 
 #copyright {
   color: var(--color-green);
@@ -47,7 +47,7 @@
 }
 
 pre {
-  border-size: 5px;
+  border-width: 5px;
   border-style: solid;
   border-color: var(--color-green);
   padding: 20px;
@@ -166,4 +166,58 @@ body {
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   --mono-font-stack: Hack, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+.folddownMain{
+  transform-origin: top;
+  animation: 0.5s ease-out 2s both foldDown;
+}
+.folddownSide{
+  transform-origin: top;
+  animation: 0.5s ease-out 0s both foldDown;
+}
+
+.spreadCenterFooter{
+  animation: 1s ease-in 2s 1 spreadCenterHr;
+}
+/*a class that makes a slide in animation from the top*/
+.slideInTop {
+  animation: 1s ease-out 0s 0.1 slideInTop;
+
+}
+/*Animations to use for various elements classes and divs*/
+  /* Folddown animation, folds down from top of browser window*/
+@keyframes foldDown{
+  0%{
+      opacity:0;
+      height:0;
+  }
+  1%{
+      opacity:0;
+      transform:scaleY(0%);
+  }
+  100%{
+      opacity:1;
+      transform:scaleY(100%);
+  }
+}
+  /*Animation that spreads div from center, ideal for hrs*/
+@keyframes spreadCenterHr{
+  0%{
+      transform:scaleX(0%);
+      color:grey;
+  }
+  100%{
+      transform:scaleX(100%);
+      color:#00ff0069;
+  }
+
+}
+/*animation definition called slideInTop*/
+@keyframes slideInTop{
+  0%{
+      transform: translateY(-100%);
+  }
+  100%{
+      transform: translateY(0%);
+  }
 }
