@@ -138,7 +138,36 @@
           <hr />
 
         </div>
+
+        <div class="codebox" style="--char:851">
+          <pre> <h5><span class="auto-type">           
+#include &lt;meta/net.h&gt;
+
+int main() {
+    int serverSocket = meta_socket(AF_INET, SOCK_STREAM, 0);
+    // Set up server socket and bind it to a specific port
+
+    // Listen for incoming connections and handle requests
+    while (1) {
+        int clientSocket = meta_accept(serverSocket, NULL, NULL);
+        // Accept incoming connection from a client
+
+        // Handle the request and send the appropriate response
+        handleRequest(clientSocket);
+
+        // Close the client socket
+        meta_close(clientSocket);
+    }
+
+    // Close the server socket
+    meta_close(serverSocket);
+    return 0;
+}
+               </span></h5></pre>
+       </div>
+       
         <div id="content" class="col-lg-8 col-md-8 folddownMain">
+
           <h1>{{ page.title }}</h1>
 
 
