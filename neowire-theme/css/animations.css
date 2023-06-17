@@ -1,6 +1,6 @@
 .folddownMain {
   transform-origin: top;
-  animation: 1s ease-out 1.2s both foldDown;
+  animation: 0.5s ease-out 1s both foldDown;
 }
 .folddownSide {
   transform-origin: top;
@@ -65,13 +65,13 @@
   height: 100%;
 
   /*fireFox support*/
-  -moz-animation: hideBox 0s ease-in 1.2s forwards;
+  -moz-animation: hideBox 0s ease-in 1s forwards;
   /*Safari/Chrome support*/
-  -webkit-animation: hideBox 0s ease-in 1.2s forwards;
+  -webkit-animation: hideBox 0s ease-in 1s forwards;
   /*Opera support*/
-  -o-animation: hideBox 0s ease-in 1.2s forwards;
+  -o-animation: hideBox 0s ease-in 1s forwards;
   /*standard below*/
-  animation: hideBox 0s ease-in 1.2s forwards;
+  animation: hideBox 0s ease-in 1s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -111,7 +111,7 @@
   this is calculated depending on the number of characters set.
   Likewise, the steps of the animation, the length of it, is determined by the number of characters as well
   */
-      textanim calc(var(--char) * 0.0025s) steps(var(--char)) backwards;
+      textanim calc(var(--char) * 0.001s) steps(var(--char)) backwards;
 }
 @keyframes textanim {
   /*The animation stretches the background by 200 percent*/

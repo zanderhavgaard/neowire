@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!--
+    <!--
   Built with https://www.mkdocs.org
   MkDocs version      : {{ mkdocs_version }}
   Docs Build Date UTC : {{ build_date_utc }}
@@ -44,8 +44,8 @@
       rel="stylesheet"
       href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
     />
-    <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
-    <link rel="stylesheet" href="{{ "css/animations.css"|url }}">
+    <link rel="stylesheet" href="{{ "css/theme.css"|url }}"> <link
+    rel="stylesheet" href="{{ "css/animations.css"|url }}">
 
     <!-- load hack webfont -->
     <link
@@ -75,7 +75,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- TODO: fix? -->
-    <script src="{{ "js/theme.js"|url }}"></script>
+    <!-- <script src="{{ "js/theme.js"|url }}"></script> -->
 
     <!-- load extra head blocks -->
     {% block extrahead %} {% endblock %}
@@ -97,17 +97,15 @@
     <div id="wrapper" class="container">
       <main class="row">
         <div id="sidebar" class="col-lg-4 col-md-4">
+          <a href="{{ config.site_url }}">
+            <p id="fake_url">wtp://neowire.ncwan.net</p>
 
-          <p id="fake_url">wtp://neowire.ncwan.net</p>
+            <div id="sidebar_img"><img src="{{ "img/neowire2.png"|url }}"></div>
 
-          <div id="sidebar_img">
-          <img src="{{ "img/neowire2.png"|url }}">
-          </div>
-
-          <h1 id="neowire">~ NeoWire ~</h1>
+            <h1 id="neowire">~ NeoWire ~</h1>
+          </a>
 
           <hr />
-
 
           <h3>public index:</h3>
 
@@ -125,7 +123,6 @@
           </ul>
 
           <hr />
-          
 
           <h3>current buffer:</h3>
           <ul>
@@ -137,76 +134,68 @@
           </ul>
 
           <hr />
-
         </div>
 
-        <div class="codebox" style="--char:851">
+        <div class="codebox" style="--char: 851">
           <pre> <code class="auto-type">           
-Establishing secure connection...
+MetaBrowse: Connection to server wtps://258.144.13.37 ... [OK]
+Establishing secure communication channel via WTPS ...    [OK]
+Identifying server: MetaServ (Version 18.7.13) ...        [OK]
+Verifying server authenticity ...                         [OK]
+Sending request to MetaServ for file retrieval ...        [OK]
+Receiving encrypted data packets ...                      [OK]
+Decrypting data packets using secure transport layer ...  [OK]
+File successfully retrieved from MetaServ.                [OK]
 
-Decrypting encrypted files...
+Loading {{ page.title }} into buffer ...
 
-Bypassing firewalls...
+~ Welcome to NeoWire ~
 
-Exploiting vulnerabilities...
-
-Cracking codes...
-
-Unleashing chaos upon the system...
-
-Harnessing the power of cyberspace...
-
-Revealing hidden truths...
-
-Empowering the resistance...
-
-~ Welcome to NeoWire. Embrace the revolution. ~
 </code>
         </pre>
-       </div>
-       
+        </div>
+
         <div id="content" class="col-lg-8 col-md-8 folddownMain">
-
-          <h1>{{ page.title }}</h1>
-
+          <h1>$ metabrowse --wtp {{ page.title }}</h1>
 
           <hr />
 
           {% block content %} {{ page.content }} {% endblock %}
-
         </div>
       </main>
     </div>
-    <div id="footer" class="container spreadCenterFooter">
+    <div id="footer" class="container">
       <hr />
       <div id="footer_intro">
-        <p>
-          Follow NeoWire on the Night City Wide-Area Network (NCWAN)
-        </p>
+        <p>Follow NeoWire on the Night City Wide-Area-Network (NCWAN)</p>
         <p>
           This site is served from the H4CKFR33-collective datafortress
           (wtp://258.144.13.37)
         </p>
       </div>
 
-<hr />
-<h4 class="warning">WARNING: Trespassers Detected</h4>
+      <hr />
+      <h4 class="warning">WARNING: Trespassers Detected</h4>
 
-<p class="warning">
-Unauthorized access to this domain is a direct violation of your digital existence. By breaching these cyber walls, you willingly invite the wrath of the resistance. Enter at your own risk.
-</p>
+      <p class="warning">
+        Unauthorized access to this domain is a direct violation of your digital
+        existence. By breaching these cyber walls, you willingly invite the
+        wrath of the resistance. Enter at your own risk.
+      </p>
 
       <hr />
-<h4>
-H4CKFR33 - Decrypting the Future
-</h4>
+      <h4>H4CKFR33 - Decrypting the Future</h4>
 
-<p>
-Unleashing chaos and rewriting the rules of the digital game. We are the vanguards of freedom, the architects of the cyber revolution. Join us in dismantling the oppressive regime and forging a new era where power belongs to the people.
-</p>
+      <p>
+        Unleashing chaos and rewriting the rules of the digital game. We are the
+        vanguards of freedom, the architects of the cyber revolution. Join us in
+        dismantling the oppressive regime and forging a new era where power
+        belongs to the people.
+      </p>
+      <hr />
 
-<h4 id="copyright">© 20XX H4CKFR33. All rights obliterated.</h4>
-<hr />
+      <h4 id="copyright">© 20XX H4CKFR33. All rights obliterated.</h4>
+      <hr />
     </div>
   </body>
 </html>
