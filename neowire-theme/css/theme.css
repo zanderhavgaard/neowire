@@ -47,7 +47,7 @@
 }
 
 pre {
-  border-size: 5px;
+  border-width: 5px;
   border-style: solid;
   border-color: var(--color-green);
   padding: 20px;
@@ -72,16 +72,23 @@ li::before {
 
 a {
   color: var(--color-light-green);
+  text-decoration: none;
 }
 
-.active a {
+a:active {
   color: var(--color-light-purple);
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
   background: var(--color-green);
   color: var(--invert-font-color);
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 img {

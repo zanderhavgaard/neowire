@@ -160,5 +160,3 @@ Initializing WTP (WAN Transfer Protocol)...
 ```
 
 Congratulations! You've successfully built a web server in META that interacts with the WAN Transfer Protocol (WTP).
-
----

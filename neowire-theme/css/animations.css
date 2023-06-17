@@ -1,0 +1,127 @@
+.folddownMain {
+  transform-origin: top;
+  animation: 0.5s ease-out 1s both foldDown;
+}
+.folddownSide {
+  transform-origin: top;
+  animation: 0.5s ease-out 0s both foldDown;
+}
+
+.spreadCenterFooter {
+  animation: 1s ease-in 2s 1 spreadCenterHr;
+}
+/*a class that makes a slide in animation from the top*/
+.slideInTop {
+  animation: 1s ease-out 0s 0.1 slideInTop;
+}
+
+/*Animations to use for various elements classes and divs*/
+/* Folddown animation, folds down from top of browser window*/
+@keyframes foldDown {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scaleY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(100%);
+  }
+}
+/*Animation that spreads div from center, ideal for hrs*/
+@keyframes spreadCenterHr {
+  0% {
+    transform: scaleX(0%);
+    color: var(--color-bg0);
+  }
+  100% {
+    transform: scaleX(100%);
+    color: var(--color-green);
+  }
+}
+
+/*animation definition called slideInTop*/
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.codebox {
+  padding: 50px;
+  overflow: hidden;
+  background-color: var(--color-bg0);
+  /* border-style: solid; */
+  /* border-width: 2wpx; */
+  /* border-color: #00ff00; */
+  width: 65%;
+  height: 100%;
+
+  /*fireFox support*/
+  -moz-animation: hideBox 0s ease-in 1s forwards;
+  /*Safari/Chrome support*/
+  -webkit-animation: hideBox 0s ease-in 1s forwards;
+  /*Opera support*/
+  -o-animation: hideBox 0s ease-in 1s forwards;
+  /*standard below*/
+  animation: hideBox 0s ease-in 1s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes hideBox {
+  to {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.auto-type {
+  /*Note- Monospace looks best for this*/
+  font-family: Hack;
+  color: #0000;
+  /*Some magic trickery here, we use gradients to color the "caret" and text*/
+  background:
+      /*Caret color, note the -90degree origin and the transparent first color*/ linear-gradient(
+        -90deg,
+        #00dffc 5px,
+        #0000 0
+      )
+      10px 0,
+    /*text coloring*/ linear-gradient(var(--color-green) 0 0) 0 0;
+  /*calculate the size of the area to animate depending on the number of characters set*/
+  background-size: calc(var(--char) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  /*make the background clip out text that it doesn't cover*/
+  background-clip: padding-box, text;
+  /*Dont repeat the background*/
+  background-repeat: no-repeat;
+  /*Here comes the function of the magic, ANIMATIONS!*/
+  animation:
+  /*The caret animation consists of moving the caret up and down very quickly to make it look like it's blinking*/ caretanim
+      0.7s infinite steps(1),
+    /*
+  The text animation resizes the background to fill out the entire letter space
+  this is calculated depending on the number of characters set.
+  Likewise, the steps of the animation, the length of it, is determined by the number of characters as well
+  */
+      textanim calc(var(--char) * 0.001s) steps(var(--char)) backwards;
+}
+@keyframes textanim {
+  /*The animation stretches the background by 200 percent*/
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes caretanim {
+  /*The animation moves the caret up and down very fast*/
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
