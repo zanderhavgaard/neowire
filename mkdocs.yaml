@@ -2,6 +2,11 @@
 site_name: neowire.ncwan.net
 site_url: https://neowire.ncwan.net
 
+markdown_extensions:
+  - markdown.extensions.codehilite:
+      guess_lang: true
+      use_pygments: true
+
 theme:
   name: null
   custom_dir: "neowire-theme"
@@ -11,6 +16,7 @@ nav:
   - "behind_the_code.wml": behind_the_code.md
   - "wtf_is_this.wml": wtf_is_this.md
   - "datadumps/":
+      - "datadump_85.mtar": datadumps/datadump_85.md
       - "datadump_84.mtar": datadumps/datadump_84.md
       - "datadump_83.mtar": datadumps/datadump_83.md
       - "datadump_82.mtar": datadumps/datadump_82.md
